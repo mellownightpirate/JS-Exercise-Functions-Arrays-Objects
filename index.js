@@ -164,7 +164,6 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  let i = 0;
   const lastCar = inventory[inventory.length-1]
   return `This is a ${lastCar.car_make} ${lastCar.car_model}`
 }
@@ -181,8 +180,11 @@ function getLastCarInfo(inventory) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(inventory, id) {
+  let i = 5;
+  for (i = 0; i < inventory.length; i++) {
+    return `This is a ${inventory[i].car_make} ${inventory[i].car_model}`
+  }
 }
 
 /**
