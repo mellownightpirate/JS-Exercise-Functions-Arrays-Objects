@@ -61,7 +61,7 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(personObj) {
-  return "Hello, my name is " + personObj.name;
+  return `Hello, my name is ${personObj.name}`;
 }
 
 /**
@@ -84,7 +84,7 @@ function makeSmartPerson(name, num1, num2) {
       return num1 + num2
     },
     speak: () => {
-      return "Hello, my name is " + Smartypants.name
+      return `Hello, my name is ${name}`
     }
   }
 
@@ -146,7 +146,10 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  let i = 5;
+  for (i = 0; i < inventory.length; i++) {
+    return `This is a inventory ${inventory[index].car_make} ${inventory[index].car_model}`
+  }
 }
 
 /**
